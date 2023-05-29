@@ -11,7 +11,11 @@ export default function Typography({
 }) {
 	switch (type) {
 		case 'h1':
-			return <Heading as="h1">{content}</Heading>
+			return (
+				<Heading as="h1" size="4xl">
+					{content}
+				</Heading>
+			)
 		case 'p':
 			return <p>{content}</p>
 		default:
