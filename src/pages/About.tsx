@@ -1,5 +1,5 @@
 import React from 'react'
 
 export default function About(): JSX.Element {
-	return <p>About</p>
+  return <p>About</p>
 }
