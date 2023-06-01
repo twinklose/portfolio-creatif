@@ -13,6 +13,18 @@ export default function Typography({
       return <h1>{content}</h1>
     case 'p':
       return <p>{content}</p>
+    case 'vertical':
+      return (
+        <p
+          style={{
+            writingMode: 'vertical-rl',
+            textOrientation: 'upright',
+            fontSize: '1rem',
+          }}
+        >
+          {content}
+        </p>
+      )
     default:
       return <p>{content}</p>
   }

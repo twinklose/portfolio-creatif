@@ -21,9 +21,9 @@ export default function App(): JSX.Element {
         <Routes>
           <Route path="/" element={<Navbar themeToggler={themeToggler} />}>
             <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="projects" element={<Projects />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/projects" element={<Projects />} />
           </Route>
         </Routes>
       </ThemeProvider>

@@ -1,1 +1,1 @@
-export type TypographyVariant = ['h1', 'p']
+export type TypographyVariant = ['h1', 'p', 'vertical']
