@@ -1,5 +1,6 @@
 import React from 'react'
 import { TypographyVariant } from './types'
+import { Vertical } from './style'
 
 export default function Typography({
   content,
@@ -14,17 +15,7 @@ export default function Typography({
     case 'p':
       return <p>{content}</p>
     case 'vertical':
-      return (
-        <p
-          style={{
-            writingMode: 'vertical-rl',
-            textOrientation: 'upright',
-            fontSize: '1rem',
-          }}
-        >
-          {content}
-        </p>
-      )
+      return <Vertical>{content}</Vertical>
     default:
       return <p>{content}</p>
   }

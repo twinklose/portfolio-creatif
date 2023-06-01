@@ -7,10 +7,8 @@ const NavStyled = styled.nav`
   align-items: center;
   height: 100vh;
   width: 7.5vw;
-  background-color: ${({ theme }) => theme.background};
-  color: ${({ theme }) => theme.text};
   padding: 1rem;
-  border-right: 1px solid ${({ theme }) => theme.text};
+  border-right: 2px solid ${({ theme }) => theme.text};
 `
 
 export { NavStyled }

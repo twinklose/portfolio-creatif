@@ -31,6 +31,8 @@ const globalStyle = createGlobalStyle`
     height: 100vh;
     width: 100vw;
     background-color: ${({ theme }: GlobalThemeProps) => theme.background};
+    color: ${({ theme }: GlobalThemeProps) => theme.text};
+    transition: color 0.5s ease-in-out;
     transition: background-color 0.5s ease-in-out;
   }
 `
