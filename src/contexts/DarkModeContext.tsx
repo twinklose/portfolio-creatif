@@ -1,20 +1,16 @@
-import React, { createContext, useState } from 'react'
+import React from 'react'
+import { ThemeProvider } from 'styled-components'
+import useThemeMode from '../hooks/useThemeMode'
+import { lightTheme, darkTheme } from '../components/styles/theme.'
 
-export const DarkModeContext = createContext({
-  theme: 'light',
-  toggleTheme: () => {
-    // do nothing
-  },
-})
+export default function DarkModeContext({
+  children,
+}: {
+  children: React.ReactNode
+}): JSX.Element {
+  const { theme } = useThemeMode()
 
-export default function DarkModeProvider({ children }: { children: React.ReactNode }): JSX.Element {
-  const [theme, setTheme] = useState('light')
+  const themeMode = theme === 'dark' ? darkTheme : lightTheme
 
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'))
-  }
-
-  return (
-    <DarkModeContext.Provider value={{ theme, toggleTheme }}>{children}</DarkModeContext.Provider>
-  )
+  return <ThemeProvider theme={themeMode}>{children}</ThemeProvider>
 }
