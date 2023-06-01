@@ -1,5 +1,5 @@
 import React from 'react'
-import { TypographyVariant } from './services/types'
+import { TypographyVariant } from './types'
 
 export default function Typography({
   content,

@@ -32,8 +32,6 @@ const globalStyle = createGlobalStyle`
     width: 100vw;
     background-color: ${({ theme }: GlobalThemeProps) => theme.background};
   }
-
-
 `
 
 export default withTheme(globalStyle)

@@ -4,7 +4,7 @@ export default function useThemeMode(): {
   theme: string
   themeToggler: () => void
 } {
-  const [theme, setTheme] = useState('dark')
+  const [theme, setTheme] = useState('light')
 
   const setMode = (mode: string) => {
     window.localStorage.setItem('theme', mode)
@@ -12,7 +12,7 @@ export default function useThemeMode(): {
   }
 
   const themeToggler = () =>
-    theme === 'dark' ? setMode('light') : setMode('dark')
+    theme === 'light' ? setMode('dark') : setMode('light')
 
   useEffect(() => {
     const localTheme = window.localStorage.getItem('theme')
