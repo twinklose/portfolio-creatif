@@ -1,6 +1,7 @@
 import React from 'react'
 import Typography from '../atoms/Typography'
 import { useTrail, animated } from '@react-spring/web'
+import { TitleBlock } from './styles/style'
 
 export default function Title(): JSX.Element {
   const items = ['Mathieu', 'Dacheux']
@@ -10,7 +11,7 @@ export default function Title(): JSX.Element {
   })
 
   return (
-    <>
+    <TitleBlock>
       {trail.map((props, index) => (
         <animated.div key={index} style={props}>
           <Typography
@@ -19,6 +20,6 @@ export default function Title(): JSX.Element {
           />
         </animated.div>
       ))}
-    </>
+    </TitleBlock>
   )
 }

@@ -12,4 +12,13 @@ const NavStyled = styled.nav`
   position: relative;
 `
 
-export { NavStyled }
+const HeadSection = styled.section`
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+`
+
+export { NavStyled, HeadSection }
