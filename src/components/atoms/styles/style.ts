@@ -28,6 +28,12 @@ const ToggleMode = Styled.button`
   height: 1.25rem;
   margin: auto auto;
   right: 1rem;
+  @media (min-width: 768px) {
+    right: auto;
+    bottom: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 `
 
 const ToggleImage = Styled.img`

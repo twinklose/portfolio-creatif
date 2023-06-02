@@ -10,7 +10,7 @@ const NavStyled = styled.nav`
   border-bottom: 2px solid ${({ theme }) => theme.text};
   padding: 1rem;
   @media (min-width: 768px) {
-    height: 100vh;
+    height: 100dvh;
     width: 100px;
     flex-direction: column;
     border-right: 2px solid ${({ theme }) => theme.text};
