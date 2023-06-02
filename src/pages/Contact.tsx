@@ -1,6 +1,7 @@
 import React from 'react'
 import { FlexMain, MainStyled } from './styles/styles'
 import Navbar from '../components/organisms/Navbar'
+import Title from '../components/molecules/Title'
 
 export default function Home({
   themeToggler,
@@ -12,7 +13,7 @@ export default function Home({
       <FlexMain>
         <Navbar themeToggler={themeToggler} />
         <MainStyled>
-          <p>Contact</p>
+          <Title />
         </MainStyled>
       </FlexMain>
     </>
