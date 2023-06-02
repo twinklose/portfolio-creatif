@@ -24,14 +24,15 @@ const globalStyle = createGlobalStyle`
   }
 
   body  {
-    -webkit-font-smoothing: antialiased;
     height: 100dvh;
     width: 100vw;
-    font-family: 'Montserrat', sans-serif;
-    background-color: ${({ theme }: GlobalThemeProps) => theme.background};
-    color: ${({ theme }: GlobalThemeProps) => theme.text};
+    font-size: 20px;
     transition: color 0.5s ease-in-out;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Montserrat', sans-serif;
     transition: background-color 0.5s ease-in-out;
+    color: ${({ theme }: GlobalThemeProps) => theme.text};
+    background-color: ${({ theme }: GlobalThemeProps) => theme.background};
   }
 `
 
