@@ -18,7 +18,7 @@ const HeadSection = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
 `
 
 export { NavStyled, HeadSection }

@@ -1,16 +1,12 @@
 import React from 'react'
 import Typography from '../atoms/Typography'
-import { SubPlace, TitlePlace } from './styles/style'
+import { TitleBlock } from './styles/style'
 
 export default function Title(): JSX.Element {
   return (
-    <>
-      <TitlePlace>
-        <Typography variant="h1" content="Mathieu" />
-      </TitlePlace>
-      <SubPlace>
-        <Typography variant="h2" content="Dacheux" />
-      </SubPlace>
-    </>
+    <TitleBlock>
+      <Typography variant="h1" content="Mathieu" />
+      <Typography variant="h2" content="Dacheux" />
+    </TitleBlock>
   )
 }
