@@ -5,7 +5,7 @@ import {
   GridTitle,
   Gridi1,
   Hone,
-  Paragraph,
+  Description,
   Specification,
   TitleBlock,
   WorkName,
@@ -31,10 +31,10 @@ export default function Title(): JSX.Element {
             </GridSubTitle>
             <Gridi1>
               <WorkName>
-                <Paragraph>Développeur</Paragraph>
+                <Description>Développeur</Description>
               </WorkName>
               <Specification>
-                <Paragraph>Front-end</Paragraph>
+                <Description>Front-end</Description>
               </Specification>
             </Gridi1>
           </GridContainer>

@@ -27,12 +27,13 @@ const Hone = styled.h1`
   }
 `
 
-const Paragraph = styled.p`
+const Description = styled.p`
   margin: 0;
   padding: 0;
   font-size: 1.5rem;
   font-weight: 500;
   text-align: left;
+  font-style: italic;
   color: ${({ theme }) => theme.text};
   @media (min-width: 768px) {
     font-size: 1.75srem;
@@ -101,7 +102,7 @@ const Specification = styled.div`
 export {
   TitleBlock,
   Hone,
-  Paragraph,
+  Description,
   GridContainer,
   GridSubTitle,
   GridTitle,
