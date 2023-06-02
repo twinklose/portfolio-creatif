@@ -9,6 +9,7 @@ import Contact from './pages/Contact'
 import Projects from './pages/Projects'
 import { Route, Routes } from 'react-router-dom'
 import Global from './components/styles/global'
+import Error from './pages/Error'
 
 export default function App(): JSX.Element {
   const { theme, themeToggler } = useThemeMode()
@@ -31,6 +32,7 @@ export default function App(): JSX.Element {
             path="/projects"
             element={<Projects themeToggler={themeToggler} />}
           />
+          <Route path="*" element={<Error />} />
         </Routes>
       </ThemeProvider>
     </DarkModeContext>
