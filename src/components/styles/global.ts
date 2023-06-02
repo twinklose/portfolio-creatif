@@ -9,11 +9,11 @@ const globalStyle = createGlobalStyle`
   :root {
     //dark-mode
     --dark-background: #1E1E1E;
-    --dark-text: #ffffff;
+    --dark-text: #F4F5F1;
 
     //light-mode
     --light-background: #F4F5F1;
-    --light-text: #000000;;
+    --light-text: #1E1E1E;;
   }
 
   * {
