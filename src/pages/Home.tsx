@@ -2,6 +2,7 @@ import React from 'react'
 import { FlexMain, MainStyled } from './styles/styles'
 import Navbar from '../components/organisms/Navbar'
 import { useTrail, animated } from '@react-spring/web'
+import Title from '../components/molecules/Title'
 
 export default function Home({
   themeToggler,
@@ -22,7 +23,7 @@ export default function Home({
           </animated.header>
         ))}
         <MainStyled>
-          <p>Home</p>
+          <Title />
         </MainStyled>
       </FlexMain>
     </>

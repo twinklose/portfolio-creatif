@@ -1,8 +1,7 @@
 import React from 'react'
 import TogglerButton from '../atoms/ToggleDarkMode'
-import Typography from '../atoms/Typography'
 import { NavStyled } from './styles/style'
-import { Linked } from '../atoms/styles/style'
+import { Linked, Vertical } from '../atoms/styles/style'
 
 export default function Navbar({
   themeToggler,
@@ -12,13 +11,13 @@ export default function Navbar({
   return (
     <NavStyled>
       <Linked to="/projects">
-        <Typography content="Projets" variant="vertical" />
+        <Vertical>Projets</Vertical>
       </Linked>
       <Linked to="/about">
-        <Typography content="À propos" variant="vertical" />
+        <Vertical>À propos</Vertical>
       </Linked>
       <Linked to="/contact">
-        <Typography content="Contact" variant="vertical" />
+        <Vertical>Contact</Vertical>
       </Linked>
       <TogglerButton themeToggler={themeToggler} />
     </NavStyled>
