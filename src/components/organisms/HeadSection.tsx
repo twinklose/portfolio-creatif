@@ -5,5 +5,5 @@ export default function HeadSection({
 }: {
   children: JSX.Element
 }): JSX.Element {
-  return <HeadSection>{children}</HeadSection>
+  return <div>{children}</div>
 }

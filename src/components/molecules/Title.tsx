@@ -4,7 +4,7 @@ import { TitleBlock } from './styles/style'
 import { useTrail, animated } from '@react-spring/web'
 
 export default function Title(): JSX.Element {
-  const trail = useTrail(2, {
+  const trail = useTrail(1, {
     from: { opacity: 0, transform: 'translate3d(0, 100%, 0)' },
     to: { opacity: 1, transform: 'translate3d(0, 0%, 0)' },
     delay: 1000,
@@ -13,11 +13,7 @@ export default function Title(): JSX.Element {
     <TitleBlock>
       {trail.map((props, index) => (
         <animated.div key={index} style={props}>
-          {index === 0 ? (
-            <Typography variant="h1" content="Mathieu" />
-          ) : (
-            <Typography variant="h2" content="Dacheux" />
-          )}
+          <Typography variant="h1" content="Mathieu" />
         </animated.div>
       ))}
     </TitleBlock>

@@ -11,14 +11,14 @@ export default function Navbar({
 }): JSX.Element {
   return (
     <NavStyled>
-      <Linked to="/contact">
-        <Typography content="Contact" variant="vertical" />
+      <Linked to="/projects">
+        <Typography content="Projets" variant="vertical" />
       </Linked>
       <Linked to="/about">
         <Typography content="À propos" variant="vertical" />
       </Linked>
-      <Linked to="/projects">
-        <Typography content="Projets" variant="vertical" />
+      <Linked to="/contact">
+        <Typography content="Contact" variant="vertical" />
       </Linked>
       <TogglerButton themeToggler={themeToggler} />
     </NavStyled>

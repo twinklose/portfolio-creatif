@@ -24,45 +24,6 @@ function TogglerButton({ themeToggler }: ThemeTogglerProps): JSX.Element {
         )}
       </ToggleMode>
     </>
-
-    // <>
-    //   <label htmlFor="checkbox" className="switch">
-    //     <input
-    //       id="checkbox"
-    //       type="checkbox"
-    //       onClick={themeToggler}
-    //       onChange={() => false}
-    //       checked={window.localStorage.getItem('theme') === 'light'}
-    //     />
-    //     <div>
-    //       {window.localStorage.getItem('theme') !== 'light' ? (
-    //         <>
-    //           <button
-    //             style={{
-    //               backgroundColor: 'transparent',
-    //               border: 'none',
-    //               cursor: 'pointer',
-    //             }}
-    //           >
-    //             dark
-    //           </button>
-    //         </>
-    //       ) : (
-    //         <>
-    //           <button
-    //             style={{
-    //               backgroundColor: 'transparent',
-    //               border: 'none',
-    //               cursor: 'pointer',
-    //             }}
-    //           >
-    //             light
-    //           </button>
-    //         </>
-    //       )}
-    //     </div>
-    //   </label>
-    // </>
   )
 }
 
