@@ -9,6 +9,7 @@ const NavStyled = styled.nav`
   width: 7.5vw;
   padding: 1rem;
   border-right: 2px solid ${({ theme }) => theme.text};
+  position: relative;
 `
 
 export { NavStyled }

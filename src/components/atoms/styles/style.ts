@@ -21,4 +21,17 @@ const Linked = Styled(Link)`
   }
 `
 
-export { Vertical, Linked }
+const ToggleMode = Styled.button`
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position : absolute;
+  bottom: 1rem;
+`
+
+const ToggleImage = Styled.img`
+  width: 1.5rem;
+  height: 1.5rem;
+`
+
+export { Vertical, Linked, ToggleMode, ToggleImage }

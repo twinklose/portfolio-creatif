@@ -1,5 +1,5 @@
 import React from 'react'
-// import TogglerButton from '../atoms/ToggleDarkMode'
+import TogglerButton from '../atoms/ToggleDarkMode'
 import Typography from '../atoms/Typography'
 import { NavStyled } from '../styles/style'
 import { Linked } from '../atoms/styles/style'
@@ -9,7 +9,6 @@ export default function Navbar({
 }: {
   themeToggler: () => void
 }): JSX.Element {
-  console.log(themeToggler)
   return (
     <NavStyled>
       <Linked to="/contact">
@@ -21,6 +20,7 @@ export default function Navbar({
       <Linked to="/projects">
         <Typography content="Projets" variant="vertical" />
       </Linked>
+      <TogglerButton themeToggler={themeToggler} />
     </NavStyled>
   )
 }
