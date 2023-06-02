@@ -1,12 +1,21 @@
 import React from 'react'
 import Typography from '../components/atoms/Typography'
-import { MainStyled } from './styles/styles'
+import { FlexMain, MainStyled } from './styles/styles'
+import Navbar from '../components/organisms/Navbar'
 
-export default function Home(): JSX.Element {
+export default function Home({
+  themeToggler,
+}: {
+  themeToggler: () => void
+}): JSX.Element {
   return (
-    <MainStyled>
-      <h1>Home</h1>
-      <Typography content="Hello World" variant="h1" />
-    </MainStyled>
+    <>
+      <FlexMain>
+        <Navbar themeToggler={themeToggler} />
+        <MainStyled>
+          <Typography content="Home" variant="h1" />
+        </MainStyled>
+      </FlexMain>
+    </>
   )
 }

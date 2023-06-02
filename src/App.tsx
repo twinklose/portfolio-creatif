@@ -8,7 +8,6 @@ import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Projects from './pages/Projects'
 import { Route, Routes } from 'react-router-dom'
-import Navbar from './components/organisms/Navbar'
 import Global from './components/styles/global'
 
 export default function App(): JSX.Element {
@@ -19,12 +18,10 @@ export default function App(): JSX.Element {
       <ThemeProvider theme={themeMode}>
         <Global />
         <Routes>
-          <Route path="/" element={<Navbar themeToggler={themeToggler} />}>
-            <Route index element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/projects" element={<Projects />} />
-          </Route>
+          <Route index element={<Home themeToggler={themeToggler} />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </ThemeProvider>
     </DarkModeContext>
