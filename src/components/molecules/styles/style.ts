@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 const TitleBlock = styled.div`
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +13,7 @@ const TitleBlock = styled.div`
 const Hone = styled.h1`
   margin: 0;
   padding: 0;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;

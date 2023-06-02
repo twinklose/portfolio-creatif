@@ -10,6 +10,7 @@ const NavStyled = styled.nav`
   border-bottom: 2px solid ${({ theme }) => theme.text};
   padding: 1rem;
   z-index: 100;
+  overflow: hidden;
   @media (min-width: 768px) {
     height: 100dvh;
     width: 100px;
