@@ -12,11 +12,8 @@ const globalStyle = createGlobalStyle`
     --dark-text: #ffffff;
 
     //light-mode
-    --light-background: #ffffff;
-    --light-text: #000000;
-
-    //splash
-    --splash-background: #1E1E1E;
+    --light-background: #F4F5F1;
+    --light-text: #000000;;
   }
 
   * {

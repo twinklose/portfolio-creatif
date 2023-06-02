@@ -1,6 +1,6 @@
 import React from 'react'
 import { TypographyVariant } from './types'
-import { Vertical } from './style'
+import { Vertical } from './styles/style'
 
 export default function Typography({
   content,
