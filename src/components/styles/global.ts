@@ -8,7 +8,7 @@ type GlobalThemeProps = {
 const globalStyle = createGlobalStyle`
   :root {
     //dark-mode
-    --dark-background: #000000;
+    --dark-background: #1E1E1E;
     --dark-text: #ffffff;
 
     //light-mode
@@ -30,6 +30,7 @@ const globalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     height: 100vh;
     width: 100vw;
+    font-family: 'Montserrat', sans-serif;
     background-color: ${({ theme }: GlobalThemeProps) => theme.background};
     color: ${({ theme }: GlobalThemeProps) => theme.text};
     transition: color 0.5s ease-in-out;
