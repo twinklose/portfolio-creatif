@@ -2,14 +2,19 @@ import styled from 'styled-components'
 
 const FlexMain = styled.div`
   display: flex;
-  justify-content: center
-  align-items: center;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 `
 
 const MainStyled = styled.main`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  width: 100vw;
+  padding: 1rem;
+  @media (min-width: 768px) {
+    width: calc(100vw - 100px);
+    height: 100dvh;
+  }
 `
 
 export { MainStyled, FlexMain }
