@@ -19,9 +19,18 @@ export default function App(): JSX.Element {
         <Global />
         <Routes>
           <Route index element={<Home themeToggler={themeToggler} />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route
+            path="/about"
+            element={<About themeToggler={themeToggler} />}
+          />
+          <Route
+            path="/contact"
+            element={<Contact themeToggler={themeToggler} />}
+          />
+          <Route
+            path="/projects"
+            element={<Projects themeToggler={themeToggler} />}
+          />
         </Routes>
       </ThemeProvider>
     </DarkModeContext>
