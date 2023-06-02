@@ -1,8 +1,27 @@
 import Styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
+const TitleStyled = Styled.h1`
+  font-size: 10.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: .80;
+  margin: 0;
+  padding: 0;
+`
+
+const SubStyled = Styled.h2`
+  font-size: 9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: .80;
+  margin: 0;
+  padding: 0;
+`
+
 const Vertical = Styled.p`
-  // make the text vertical and rotate it 90 degrees
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   text-transform: uppercase;
@@ -34,4 +53,4 @@ const ToggleImage = Styled.img`
   height: 1.5rem;
 `
 
-export { Vertical, Linked, ToggleMode, ToggleImage }
+export { TitleStyled, SubStyled, Vertical, Linked, ToggleMode, ToggleImage }

@@ -1,7 +1,7 @@
 import React from 'react'
-import Typography from '../components/atoms/Typography'
 import { FlexMain, MainStyled } from './styles/styles'
 import Navbar from '../components/organisms/Navbar'
+import Title from '../components/molecules/Title'
 
 export default function Home({
   themeToggler,
@@ -13,7 +13,7 @@ export default function Home({
       <FlexMain>
         <Navbar themeToggler={themeToggler} />
         <MainStyled>
-          <Typography content="Home" variant="h1" />
+          <Title />
         </MainStyled>
       </FlexMain>
     </>

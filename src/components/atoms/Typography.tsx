@@ -1,6 +1,6 @@
 import React from 'react'
 import { TypographyVariant } from './types'
-import { Vertical } from './styles/style'
+import { SubStyled, TitleStyled, Vertical } from './styles/style'
 
 export default function Typography({
   content,
@@ -11,7 +11,9 @@ export default function Typography({
 }): JSX.Element {
   switch (variant) {
     case 'h1':
-      return <h1>{content}</h1>
+      return <TitleStyled>{content}</TitleStyled>
+    case 'h2':
+      return <SubStyled>{content}</SubStyled>
     case 'p':
       return <p>{content}</p>
     case 'vertical':
