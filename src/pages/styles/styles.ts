@@ -18,6 +18,7 @@ const MainStyled = styled.main`
 `
 
 const WrapHeader = styled.div`
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

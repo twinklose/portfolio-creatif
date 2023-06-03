@@ -24,7 +24,6 @@ const globalStyle = createGlobalStyle`
   }
 
   body  {
-    height: 100dvh;
     width: 100vw;
     font-size: 20px;
     transition: color 0.5s ease-in-out;
