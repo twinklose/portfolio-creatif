@@ -13,6 +13,10 @@ import Error from './pages/Error'
 import { AnimatePresence } from 'framer-motion'
 
 export default function App(): JSX.Element | null {
+  if (!window.localStorage.getItem('theme')) {
+    window.localStorage.setItem('theme', 'light')
+  }
+
   const { theme, themeToggler } = useThemeMode()
   const themeMode = theme === 'light' ? lightTheme : darkTheme
 
