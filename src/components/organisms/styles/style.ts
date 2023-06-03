@@ -21,13 +21,16 @@ const NavStyled = styled.nav`
 `
 
 const CircularButtonContainer = styled.div`
-  width: 225px;
-  height: 225px;
+  width: 200px;
+  height: 200px;
   overflow: hidden;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `
 
 export { NavStyled, CircularButtonContainer }

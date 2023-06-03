@@ -17,17 +17,15 @@ const MainStyled = styled.main`
   }
 `
 
-const ErrorContainer = styled.div`
-  width: 100vw;
-  height: 100dvh;
+const WrapHeader = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (min-width: 1024px) {
+    height: 250px;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
 `
 
-const SmileContainer = styled.div`
-  max-width: 350px;
-  margin: 0 auto;
-`
-
-export { MainStyled, FlexMain, ErrorContainer, SmileContainer }
+export { MainStyled, FlexMain, WrapHeader }

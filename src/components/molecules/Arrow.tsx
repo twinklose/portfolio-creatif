@@ -4,13 +4,17 @@ import { SvgArrow } from './styles/style'
 export default function Arrow(): JSX.Element {
   return (
     <SvgArrow
-      width="60"
-      height="60"
-      viewBox="0 0 43 43"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      href="https://bento.me/mathieudchx"
+      target="_blank"
+      rel="noreferrer"
     >
-      <a href="https://bento.me/mathieudchx" target="_blank" rel="noreferrer">
+      <svg
+        width="60"
+        height="60"
+        viewBox="0 0 43 43"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
           d="M18.1193 13.7942L28.9232 13.7942L28.9232 24.5981"
           stroke={
@@ -37,7 +41,7 @@ export default function Arrow(): JSX.Element {
           strokeLinejoin="round"
           width={60}
         />
-      </a>
+      </svg>
     </SvgArrow>
   )
 }

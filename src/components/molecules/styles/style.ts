@@ -24,7 +24,7 @@ const Hone = styled.h1`
     font-size: 5rem;
   }
   @media (min-width: 1024px) {
-    font-size: 8rem;
+    font-size: 7rem;
   }
 `
 
@@ -101,8 +101,8 @@ const Specification = styled.div`
 `
 
 const CirculatContainer = styled.div`
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   position: relative;
 `
 
@@ -117,7 +117,7 @@ const SvgContainer = styled.svg`
   height: 100%;
 `
 
-const SvgArrow = styled.svg`
+const SvgArrow = styled.a`
   position: absolute;
 `
 
