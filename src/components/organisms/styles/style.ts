@@ -20,4 +20,14 @@ const NavStyled = styled.nav`
   }
 `
 
-export { NavStyled }
+const CircularButtonContainer = styled.div`
+  width: 225px;
+  height: 225px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+export { NavStyled, CircularButtonContainer }

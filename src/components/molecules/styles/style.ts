@@ -103,12 +103,22 @@ const Specification = styled.div`
 const CirculatContainer = styled.div`
   width: 200px;
   height: 200px;
+  position: relative;
 `
 
 const SvgText = styled.textPath`
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
+`
+
+const SvgContainer = styled.svg`
+  width: 100%;
+  height: 100%;
+`
+
+const SvgArrow = styled.svg`
+  position: absolute;
 `
 
 export {
@@ -122,5 +132,7 @@ export {
   WorkName,
   Specification,
   CirculatContainer,
+  SvgContainer,
   SvgText,
+  SvgArrow,
 }

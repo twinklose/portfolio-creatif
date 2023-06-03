@@ -3,7 +3,7 @@ import { FlexMain, MainStyled } from './styles/styles'
 import Navbar from '../components/organisms/Navbar'
 import { useTrail, animated } from '@react-spring/web'
 import Title from '../components/molecules/Title'
-import CircularText from '../components/molecules/CircularText'
+import CircularButton from '../components/organisms/CircularButton'
 
 export default function Home({
   themeToggler,
@@ -24,7 +24,7 @@ export default function Home({
           </animated.header>
         ))}
         <MainStyled>
-          <CircularText />
+          <CircularButton />
           <Title />
         </MainStyled>
       </FlexMain>
