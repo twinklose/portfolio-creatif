@@ -7,33 +7,34 @@ import About from './pages/About'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Projects from './pages/Projects'
-import { Route, Routes } from 'react-router-dom'
+import { useLocation, useRoutes } from 'react-router-dom'
 import Global from './components/styles/global'
 import Error from './pages/Error'
+import { AnimatePresence } from 'framer-motion'
 
-export default function App(): JSX.Element {
+export default function App(): JSX.Element | null {
   const { theme, themeToggler } = useThemeMode()
   const themeMode = theme === 'light' ? lightTheme : darkTheme
+
+  const routeElements = useRoutes([
+    { path: '/', element: <Home themeToggler={themeToggler} /> },
+    { path: '/about', element: <About themeToggler={themeToggler} /> },
+    { path: '/contact', element: <Contact themeToggler={themeToggler} /> },
+    { path: '/projects', element: <Projects themeToggler={themeToggler} /> },
+    { path: '*', element: <Error /> },
+  ])
+
+  const location = useLocation()
+
+  if (!routeElements) return null
+
   return (
     <DarkModeContext>
       <ThemeProvider theme={themeMode}>
         <Global />
-        <Routes>
-          <Route index element={<Home themeToggler={themeToggler} />} />
-          <Route
-            path="/about"
-            element={<About themeToggler={themeToggler} />}
-          />
-          <Route
-            path="/contact"
-            element={<Contact themeToggler={themeToggler} />}
-          />
-          <Route
-            path="/projects"
-            element={<Projects themeToggler={themeToggler} />}
-          />
-          <Route path="*" element={<Error />} />
-        </Routes>
+        <AnimatePresence mode="wait">
+          {React.cloneElement(routeElements, { key: location.pathname })}
+        </AnimatePresence>
       </ThemeProvider>
     </DarkModeContext>
   )
