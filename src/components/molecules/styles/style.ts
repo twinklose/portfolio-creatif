@@ -100,6 +100,17 @@ const Specification = styled.div`
   }
 `
 
+const CirculatContainer = styled.div`
+  width: 200px;
+  height: 200px;
+`
+
+const SvgText = styled.textPath`
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+`
+
 export {
   TitleBlock,
   Hone,
@@ -110,4 +121,6 @@ export {
   Gridi1,
   WorkName,
   Specification,
+  CirculatContainer,
+  SvgText,
 }
