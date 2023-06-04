@@ -12,7 +12,7 @@ const MainStyled = styled.main`
   width: 100vw;
   padding: 1rem;
   @media (min-width: 768px) {
-    width: calc(100vw - 100px);
+    width: calc(100dvw - 100px);
     height: 100dvh;
   }
 `
