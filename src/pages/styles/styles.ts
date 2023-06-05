@@ -10,7 +10,6 @@ const FlexMain = styled.div`
 
 const MainStyled = styled.main`
   width: 100vw;
-  padding: 1rem;
   @media (min-width: 768px) {
     width: calc(100dvw - 100px);
     height: 100dvh;
