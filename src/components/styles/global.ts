@@ -26,7 +26,6 @@ const globalStyle = createGlobalStyle`
     width: 100vw;
     font-size: 20px;
     transition: color 0.5s ease-in-out;
-    -webkit-font-smoothing: antialiased;
     font-family: 'Montserrat', sans-serif;
     transition: background-color 0.5s ease-in-out;
     color: ${({ theme }: GlobalThemeProps) => theme.text};
