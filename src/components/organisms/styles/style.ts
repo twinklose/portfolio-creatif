@@ -8,7 +8,6 @@ const NavStyled = styled.nav`
   width: 100vw;
   position: relative;
   border-bottom: 2px solid ${({ theme }) => theme.text};
-  padding: 1rem;
   z-index: 100;
   overflow: hidden;
   @media (min-width: 768px) {

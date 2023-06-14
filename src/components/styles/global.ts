@@ -64,15 +64,6 @@ const globalStyle = createGlobalStyle`
     border-spacing: 0;
   }
 
-  // i have scrollbars x and y and i don't know why
-  html {
-    overflow-y: hidden;
-    overflow-x: hidden;
-    @media (min-width: 768px) {
-      overflow-y: scroll;
-      overflow-x: hidden;
-  }
-
   body  {
     width: 100vw;
     font-size: 20px;
