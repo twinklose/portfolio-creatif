@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 
 const TitleBlock = styled.div`
-  width: 100%;
+  width: calc(100vw - 100px);
   display: flex;
   justify-content: center;
   align-items: center;
   @media (min-width: 768px) {
+    width: calc(100vw - 100px - 225px);
     justify-content: flex-end;
   }
 `
