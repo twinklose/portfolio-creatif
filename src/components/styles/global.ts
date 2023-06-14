@@ -63,9 +63,12 @@ const globalStyle = createGlobalStyle`
     border-collapse: collapse;
     border-spacing: 0;
   }
+  * {
+    border: 1px solid red;
+  }
 
   body  {
-    outline: 1px solid red;
+    // show all borders for debugging
     width: 100vw;
     font-size: 20px;
     transition: color 0.5s ease-in-out;
