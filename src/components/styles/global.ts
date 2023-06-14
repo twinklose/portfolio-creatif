@@ -63,9 +63,6 @@ const globalStyle = createGlobalStyle`
     border-collapse: collapse;
     border-spacing: 0;
   }
-  * {
-    border: 1px solid red;
-  }
 
   body  {
     // show all borders for debugging

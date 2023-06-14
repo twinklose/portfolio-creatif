@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const TitleBlock = styled.div`
-  width: calc(100% - 100px);
+  width: calc(100% - 100x);
   display: flex;
   justify-content: center;
   align-items: center;

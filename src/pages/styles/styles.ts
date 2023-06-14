@@ -11,7 +11,7 @@ const FlexMain = styled.div`
 const MainStyled = styled.main`
   width: 100vw;
   @media (min-width: 768px) {
-    width: calc(100dvw - 100px);
+    width: calc(100dvw - 500px);
     height: 100vh;
   }
 `
