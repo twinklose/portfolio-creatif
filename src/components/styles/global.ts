@@ -65,6 +65,7 @@ const globalStyle = createGlobalStyle`
   }
 
   body  {
+    outline: 1px solid red;
     width: 100vw;
     font-size: 20px;
     transition: color 0.5s ease-in-out;
