@@ -12,7 +12,7 @@ const NavStyled = styled.nav`
   z-index: 100;
   overflow: hidden;
   @media (min-width: 768px) {
-    height: 100dvh;
+    height: 100vh;
     width: 100px;
     flex-direction: column;
     border-right: 2px solid ${({ theme }) => theme.text};
