@@ -41,7 +41,7 @@ const globalStyle = createGlobalStyle`
   footer, header, hgroup, menu, nav, section {
     display: block;
   }
-  
+
   body {
     line-height: 1;
   }
@@ -62,6 +62,12 @@ const globalStyle = createGlobalStyle`
   table {
     border-collapse: collapse;
     border-spacing: 0;
+  }
+
+  // i have scrollbars x and y and i don't know why
+  html {
+    overflow: scroll;
+    overflow-x: hidden;
   }
 
   body  {
